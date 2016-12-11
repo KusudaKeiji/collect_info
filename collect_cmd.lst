@@ -1,0 +1,75 @@
+/bin/cat /proc/cpuinfo,cat_cpuinfo.txt
+/bin/cat /proc/meminfo,cat_meminfo.txt
+/bin/netstat -r,netstat-r.txt
+/bin/netstat -aptn,netstat-aptn.txt
+/bin/netstat -rnA inet6,netstat-rnA_inet6.txt
+/bin/df -P,df-P.txt
+/bin/df -i,df-i.txt
+/bin/rpm -qa | /bin/sort,rpm-qa_sort.txt
+/bin/rpm -qa --last,rpm-qa--last.txt
+/bin/mount,mount.txt
+/bin/uname -a,uname-a.txt
+/bin/dmesg,dmesg.txt
+/bin/ps -e,ps-e.txt
+/bin/ps -ef,ps-ef.txt
+/bin/ps -efc,ps-efc.txt
+/sbin/ifconfig -a,ifconfig-a.txt
+/sbin/chkconfig --list,chkconfig--list.txt
+/sbin/fdisk -l,fdisk-l.txt
+/sbin/sysctl -a,sysctl-a.txt
+/sbin/pvdisplay,pvdisplay.txt
+/sbin/vgdisplay -v,vgdisplay-v.txt
+/sbin/lvdisplay -m,lvdisplay-m.txt
+/sbin/ip addr show,ip_addr_show.txt
+/sbin/hwclock --show,hwclock--show.txt
+/sbin/hwclock --utc,hwclock--utc.txt
+/sbin/hwclock --localtime,hwclock--localtime.txt
+/sbin/iptables -L,iptables-L.txt
+/sbin/iptables -nL,iptables-nL.txt
+/sbin/service --status-all,service--status-all.txt
+/usr/bin/yum list,yum_list.txt
+/usr/bin/yum list installed,yum_list_installed.txt
+/usr/bin/crontab -l,crontab-l.txt
+/usr/bin/free,free.txt
+/usr/sbin/dmidecode,dmidecode.txt
+/usr/sbin/crm configure show,crm_configure_show.txt
+/usr/sbin/crm_resource -L,crm_resource-L.txt
+/usr/sbin/crm_mon -Af -1,crm_mon-Af-1.txt
+/usr/lib64/heartbeat/heartbeat -v,heartbeat-v.txt
+/usr/bin/tree -a -L 3 /,tree.txt
+ulimit -a,ulimit-a_root.txt
+/sbin/multipath -ll,multipath -ll.txt
+/sbin/blkid,blkid.txt
+/opt/FJSVmpd/bin/iompadm info,iompadm_info.txt
+/usr/sbin/ntpq -p,ntpq-p.txt
+/usr/bin/last,last.txt
+/opt/LifeKeeper/bin/lktest,lktest.txt
+/opt/LifeKeeper/bin/lcdstatus,lcdstatus.txt
+/opt/LifeKeeper/bin/lcdstatus -q,lcdstatus-q.txt
+/opt/LifeKeeper/bin/lcdstatus -e,lcdstatus-e.txt
+/opt/LifeKeeper/bin/net_list -f:,net_list.txt
+/opt/LifeKeeper/bin/mirror_status datarep-data,mirror_status_datarep-data.txt
+/opt/LifeKeeper/bin/lkpolicy -g,lkpolicy-g.txt
+/opt/LifeKeeper/bin/credstore -l,credstore-l.txt
+/sbin/lsmod,lsmod.txt
+/sbin/lspci,lspci.txt
+/bin/lsblk,lsblk.txt
+/bin/find / -perm -2 -type f,find_top_-perm_2_-type_f.txt
+/bin/find / -perm -3 -type d,find_top_-perm_3_-type_d.txt
+/bin/systemctl list-unit-files --no-pager,systemctl_list-unit-files.txt
+/sbin/ip addr show,ip_addr_show.txt
+/bin/journalctl --no-pager,journalctl.txt
+/bin/hostnamectl,hostnamectl.txt
+/bin/systemctl get-default,systemctl_get-default.txt
+/bin/date,date.txt
+/bin/date -u,date-u.txt
+/sbin/hwclock --show,hwclock--show.txt
+/sbin/hwclock --show --debug,hwclock--show--debug.txt
+/sbin/hwclock -u --show --debug,hwclock-u--show--debug.txt
+/bin/timedatectl,timedatectl.txt
+/bin/systemd-cgls --no-pager,systemd-cgls.txt
+/bin/systemctl status --no-pager,systemctl_status.txt
+/sbin/parted -l,parted/parted-l.txt
+/bin/lsinitrd,lsinitrd.txt
+/bin/hostid,hostid.txt
+/bin/virsh list --all,virsh_list--all.txt
